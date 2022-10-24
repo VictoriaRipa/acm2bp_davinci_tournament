@@ -12,15 +12,19 @@ public class Main {
             comienzoDeCursada,
             finDeCursada
         );
-
-        Player profeSergio = new Player("Sergio Medina", "Goalkeeper");
-        Player profeSuplente = new Player("Suplente", "Defender");
-
         Team profesPoo = new Team("Profes POO");
-        profesPoo.addPlayer(profeSergio);
-        profesPoo.addPlayer(profeSuplente);
+        profesPoo.addPlayer(new Player("profe Poo", "Goalkeeper"));
+        profesPoo.addPlayer(new Player("profe ux", "Defender"));
+        profesPoo.addPlayer(new Player("profe pw1", "Goalkeeper"));
+        profesPoo.addPlayer(new Player("profe pw1", "Defender"));
+        profesPoo.addPlayer(new Player("profe adp", "Defender"));
 
         Team estudiantesPoo = new Team("Estudiantes POO");
+        estudiantesPoo.addPlayer(new Player("Estudiante Poo", "Goalkeeper"));
+        estudiantesPoo.addPlayer(new Player("Estudiante ux", "Goalkeeper"));
+        estudiantesPoo.addPlayer(new Player("Estudiante pw1", "Goalkeeper"));
+        estudiantesPoo.addPlayer(new Player("Estudiante pw1", "Goalkeeper"));
+        estudiantesPoo.addPlayer(new Player("Estudiante adp", "Goalkeeper"));
 
         Match primerParcial = new Match(
             "Aula 116",
