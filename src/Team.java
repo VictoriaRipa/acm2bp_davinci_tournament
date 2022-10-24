@@ -14,15 +14,19 @@ public class Team {
         return;
     }
 
-    public String getName() {
+    public String getName()
+    {
         return this.name;
     }
 
-    public void addPlayer(Player player){
+    public void addPlayer(Player player)
+    {
         this.players.add(player);
+        player.setTeam(this);
     }
 
-    public void setPlayers(ArrayList<Player> players) {
+    public void setPlayers(ArrayList<Player> players)
+    {
         this.players = players;
     }
 }
