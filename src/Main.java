@@ -32,6 +32,16 @@ public class Main {
             profesPoo,
             estudiantesPoo
         );
+
+ //marcador 0-0
+ System.out.println(primerParcial.generateMarker());
+
+ //gol de profes - localteam y vuelvo a mostrar el marcador
+ primerParcial.makeGoal(profesPoo, profesPoo.getPlayers().get(0));
+ System.out.println(primerParcial.generateMarker());
+
+ //gol de estudiantes - visitantTeam y vuelvo a mostrar el marcador
+ primerParcial.makeGoal(estudiantesPoo, estudiantesPoo.getPlayers().get(0));
  System.out.println(primerParcial.generateMarker());
     }
 }

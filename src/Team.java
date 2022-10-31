@@ -29,4 +29,8 @@ public class Team {
     {
         this.players = players;
     }
+
+public ArrayList<Player> getPlayers(){
+    return this.players;
+}
 }
